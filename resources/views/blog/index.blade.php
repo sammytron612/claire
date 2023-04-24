@@ -20,6 +20,7 @@
                     <img style="height:220px !important" src="{{$article->main_image}}" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">{{$article->title}}</p>
+                        <div><img class="d-inline avatar" src="{{$article->articleAuthor->avatar}}" alt="{{$article->articleAuthor->name}}"></div>
                         <small class="text-dark">By <span class="text-teal">{{$article->articleAuthor->name}}<span></small>
                         <small class="text-dark d-block">Date <span class="text-teal">{{ \Carbon\Carbon::parse($article->created_at)->format('d M Y')}}</span></small>
                         <a href='{{url("post/{$article->id}/{$article->slug}")}}' class="btn btn-teal btn-sm mt-3">Go there</a>
