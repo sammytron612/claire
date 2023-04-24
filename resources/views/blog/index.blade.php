@@ -19,10 +19,10 @@
                 <div class="shadow card mt-3 w-100 p-0">
                     <img style="height:220px !important" src="{{$article->main_image}}" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">{{$article->title}}</p>
-                        <div><img class="d-inline avatar" src="{{$article->articleAuthor->avatar}}" alt="{{$article->articleAuthor->name}}"></div>
+                        <h5 class="card-text text-left ">{{$article->title}}</h5>
+                        <div class="mt-4"><img class="d-inline avatar" src="{{$article->articleAuthor->avatar}}" alt="{{$article->articleAuthor->name}}"></div>
                         <small class="text-dark">By <span class="text-teal">{{$article->articleAuthor->name}}<span></small>
-                        <small class="text-dark d-block">Date <span class="text-teal">{{ \Carbon\Carbon::parse($article->created_at)->format('d M Y')}}</span></small>
+                        <small class="mt-3 text-teal d-block">{{ \Carbon\Carbon::parse($article->created_at)->format('d M Y')}}</small>
                         <a href='{{url("post/{$article->id}/{$article->slug}")}}' class="btn btn-teal btn-sm mt-3">Go there</a>
                         @can('isAdmin')
                         <a href='{{url("post/view/{$article->id}")}}' class="float-right btn btn-primary btn-sm mt-3">Edit</a>
