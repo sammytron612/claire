@@ -22,9 +22,9 @@
                         <p class="card-text">{{$article->title}}</p>
                         <small class="text-dark">By <span class="text-teal">{{$article->articleAuthor->name}}<span></small>
                         <small class="text-dark d-block">Date <span class="text-teal">{{ \Carbon\Carbon::parse($article->created_at)->format('d M Y')}}</span></small>
-                        <a href='{{url("post/{$article->id}/{$article->slug}")}}' class="btn btn-teal stretched-link btn-sm mt-3">Go there</a>
+                        <a href='{{url("post/{$article->id}/{$article->slug}")}}' class="btn btn-teal btn-sm mt-3">Go there</a>
                         @can('isAdmin')
-                        <a href='{{url("post/view/{$article->id}")}}' class="float-right btn btn-primary stretched-link btn-sm mt-3">Edit</a>
+                        <a href='{{url("post/view/{$article->id}")}}' class="float-right btn btn-primary btn-sm mt-3">Edit</a>
                         @endcan
                     </div>
                   </div>
