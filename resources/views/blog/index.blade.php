@@ -31,5 +31,6 @@
             </div>
             @endforeach
         </div>
+        <div class="py-4">{{$articles->links()}}</div>
     </div>
 @endsection
