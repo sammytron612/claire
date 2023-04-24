@@ -90,7 +90,7 @@ Route::post('/home/admin/recipe/update',[EditController::class, 'update'])->name
 
 
 Route::get('/blog', function(){
-    $articles = BlogArticle::paginate(9);
+    $articles = BlogArticle::orderBy('created_at')->paginate(9);
     return view('blog.index', ['articles' => $articles]);
 }
 )->name('blog.index');

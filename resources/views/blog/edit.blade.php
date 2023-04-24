@@ -60,6 +60,9 @@
       relative_urls : false,
       document_base_url:"{{url('')}}",
       content_style: 'textarea { padding: 20px; }',
+      image_class_list: [
+    {title: 'img-responsive', value: 'img-responsive'},
+],
       templates: [
     {title: 'Some title 1', description: 'Some desc 1', content: 'My content'},
     {title: 'Some title 2', description: 'Some desc 2', url: 'development.html'},

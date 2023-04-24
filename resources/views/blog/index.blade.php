@@ -25,7 +25,7 @@
                         <small class="mt-3 text-teal d-block">{{ \Carbon\Carbon::parse($article->created_at)->format('d M Y')}}</small>
                         <a href='{{url("post/{$article->id}/{$article->slug}")}}' class="btn btn-teal btn-sm mt-3">Go there</a>
                         @can('isAdmin')
-                        <a href='{{url("post/view/{$article->id}")}}' class="float-right btn btn-primary btn-sm mt-3">Edit</a>
+                        <a href='{{url("post/view/{$article->id}")}}' rel=”nofollow class="float-right btn btn-primary btn-sm mt-3">Edit</a>
                         @endcan
                     </div>
                   </div>

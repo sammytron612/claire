@@ -20,7 +20,8 @@
             </div>
             
         </div>
-        <div class="mt-5 text-left">
+        <h1 class="mt-5 text-center">{{$BlogArticle->title}}</h1>
+        <div style="overflow: hidden !important;" class="mt-5 text-left">
             @php echo $body->body @endphp
         </div>
         <div>

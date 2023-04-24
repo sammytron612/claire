@@ -3020,6 +3020,16 @@ button.bg-dark:focus {
   padding-left: 1rem !important;
 }
 
+
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+
 .p-5 {
   padding: 3rem !important;
 }
@@ -3133,6 +3143,10 @@ button.bg-dark:focus {
 
 .text-capitalize {
   text-transform: capitalize !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
 }
 
 .font-italic {

@@ -41,6 +41,12 @@
     @livewireStyles
     @livewireScripts
     <style>
+      img-width {
+        display: block; 
+        max-width: 100%; 
+        height: auto;
+        overflow: hidden;
+      }
 
         .my-hover:hover
         {
