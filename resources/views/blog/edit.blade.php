@@ -58,6 +58,7 @@
       toolbar: 'insert undo redo fullscreen fontsizeselect alignleft aligncenter alignright alignjustify h1 h2 bold italic numlist bullist image link emoticons hr paste table',
       contextmenu: "link image table paste",
       relative_urls : false,
+      document_base_url:"{{url('')}}",
       content_style: 'textarea { padding: 20px; }',
       templates: [
     {title: 'Some title 1', description: 'Some desc 1', content: 'My content'},
