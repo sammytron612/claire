@@ -19,7 +19,7 @@
                 <div class="shadow card mt-3 w-100 p-0">
                     <img style="height:220px !important" src="{{$article->main_image}}" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-text text-left ">{{$article->title}}</h5>
+                        <h5 class="card-text text-left mb-3">{{$article->title}}</h5>
                         <div class="mt-4"><img class="d-inline avatar" src="{{$article->articleAuthor->avatar}}" alt="{{$article->articleAuthor->name}}"></div>
                         <small class="text-dark">By <span class="text-teal">{{$article->articleAuthor->name}}<span></small>
                         <small class="mt-3 text-teal d-block">{{ \Carbon\Carbon::parse($article->created_at)->format('d M Y')}}</small>
